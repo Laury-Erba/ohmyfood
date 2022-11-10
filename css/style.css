@@ -46,6 +46,44 @@ header{
 
 /* -------------------Page ACCUEIL ---------------*/
 
+/*spinner*/
+
+.container-spinner{
+    
+}
+.spinner{
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #73cbb5;
+    border-bottom: 10px solid #9356dc;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    z-index: 11;
+    animation: spin 2s linear infinite;
+
+}
+/*animation spinner*/
+@-webkit-keyframes  spin{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+  
+
 /*localisation */
 .localisation{
     display: flex;
@@ -65,7 +103,7 @@ header{
 }
 .reservation p{
     color: grey;
-    font-size: 2Opx;
+    font-size: 20px;
     margin-bottom: 35px;
 }
 /*fonctionnement */
@@ -80,7 +118,7 @@ header{
 }
 
 .btn-fonctionnement:hover{
-    background-color: #9356dc;
+    background-color: #f5edff;
 }
 .btn-fonctionnement i{
     color : #7E7E7E;
@@ -122,7 +160,7 @@ header{
     border-radius: 4px;
 }
 .new p{
-    color: #1b6150;
+    color: #73cbb5;
     padding: 10px 20px;
     margin: 0;
     font-weight: bold;
@@ -172,4 +210,11 @@ footer .logo{
 }
 footer a{
     color: white;
+}
+footer i{
+    color : white;
+}
+.footer-lien{
+    padding-bottom: 15px;
+    margin-left: 13px;
 }
