@@ -276,8 +276,15 @@ footer i{
     margin-left: 13px;
 }
 /*-----------------------PAGE LA PALETTE DU GOUT----------------------*/
+.p-menu{
+    background-color: #f6f6f6;
+}
 .p-menu header{
     display: flex;
+}
+.section-menu{
+    margin-left: 12px;
+    margin-right: 12px;
 }
 .entete img{
     margin-top : 15px;
@@ -288,4 +295,48 @@ footer i{
     display: flex;
 justify-content: space-between;
 align-items: center;
+}
+.p-menu h3{
+   font-family: Roboto sans-serif; 
+   position: relative;
+   text-transform: uppercase;
+}
+.p-menu h3:after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.vignette-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+.content-menu{
+    line-height: 2px;
+    margin-left:4px;
+}
+
+h4{
+font-size: 20px;
+font-weight: bold;
+}
+.content-menu p{
+    color: #404040;
+}
+.entree, .plats, .desserts{
+    margin-bottom: 30px;
+    m
+}
+.commander{
+    margin-top: 70px;
+    margin-bottom : 70px;
+    text-align : center;
 }
