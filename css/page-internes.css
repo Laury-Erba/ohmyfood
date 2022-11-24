@@ -1,0 +1,78 @@
+/*-----------------------PAGE interne menu----------------------*/
+.p-menu{
+    background-color: #f6f6f6;
+}
+.p-menu header{
+    display: flex;
+    text-align: center;
+}
+.p-menu h1{
+font-size: 25px;
+font-family: 'Shrikhand' , cursive;
+margin-left: 12px;
+margin-right: 12px;
+text-align: center;
+}
+.menu{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.entete img{
+    margin-top : 15px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: -78px;
+}
+.titre-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    position: relative;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+.p-menu h2{
+   font-family: Roboto sans-serif; 
+   position: relative;
+   text-transform: uppercase;
+}
+.p-menu h2:after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.vignette-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+.content-menu{
+    line-height: 2px;
+    margin-left:4px;
+}
+
+h4{
+font-size: 20px;
+font-weight: bold;
+}
+.content-menu p{
+    color: #404040;
+}
+.entree, .plats, .desserts{
+    margin-bottom: 30px;
+}
+.commander{
+    margin-top: 70px;
+    margin-bottom : 70px;
+    text-align : center;
+}
