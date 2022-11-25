@@ -1,33 +1,39 @@
 /*-----------------------PAGE interne menu----------------------*/
-.p-menu{
+.p-menu {
     background-color: #f6f6f6;
 }
-.p-menu header{
+
+.p-menu header {
     display: flex;
 }
-.retour{
+
+.retour {
     flex-basis: 25%;
     margin-left: 25px;
 }
-.p-menu h1{
-font-size: 25px;
-font-family: 'Shrikhand' , cursive;
-margin-left: 12px;
-margin-right: 12px;
-text-align: center;
+
+.p-menu h1 {
+    font-size: 25px;
+    font-family: 'Shrikhand', cursive;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
 }
-.menu{
+
+.menu {
     margin-left: 12px;
     margin-right: 12px;
 }
-.entete img{
-    margin-top : 15px;
+
+.entete img {
+    margin-top: 15px;
     height: 100%;
     width: 100%;
     position: relative;
     margin-bottom: -78px;
 }
-.titre-menu{
+
+.titre-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,12 +42,14 @@ text-align: center;
     width: 100%;
     border-radius: 30px 30px 0 0;
 }
-.p-menu h2{
-   font-family: Roboto sans-serif; 
-   position: relative;
-   text-transform: uppercase;
+
+.p-menu h2 {
+    font-family: Roboto sans-serif;
+    position: relative;
+    text-transform: uppercase;
 }
-.p-menu h2:after{
+
+.p-menu h2:after {
     content: "";
     width: 50px;
     height: 3px;
@@ -50,7 +58,8 @@ text-align: center;
     left: 0;
     bottom: -8px;
 }
-.vignette-menu{
+
+.vignette-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,15 +70,16 @@ text-align: center;
     position: relative;
     cursor: pointer;
     overflow: hidden;
-     display: flex;
-     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 70px;
-    background-color: white ;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
-.coche{
+
+.coche {
     display: none;
     position: absolute;
     background: #99e2d0;
@@ -78,19 +88,22 @@ text-align: center;
     padding: 0 13px;
     height: 100%;
 }
-.coche i{
+
+.coche i {
     font-size: 30px;
     color: white;
     transform: rotate(180deg);
     animation: rotate 0.5s both;
 }
-.prix:fl{
-    animation: slide-left 0.5s ease ;
+
+.prix:fl {
+    animation: slide-left 0.5s ease;
     transform-origin: right;
 }
-.prix{
+
+.prix {
     padding-right: 70px;
-    transition: 0.5s ease ;
+    transition: 0.5s ease;
 
 }
 
@@ -98,94 +111,136 @@ text-align: center;
 @keyframes rotate {
     0% {
         transform: rotate(0);
-}
-100% {
+    }
+
+    100% {
         transform: rotate(360deg);
     }
 }
+
 /* animation de la case rotation */
 @keyframes slide-left {
     0% {
-              transform: scaleX(0);
+        transform: scaleX(0);
     }
+
     100% {
-              transform: scaleX(-50px);
+        transform: scaleX(-50px);
     }
-  }
+}
 
-  /* animation des menu qui apparaisse progressivement */
-  #entree{
-    animation: apparition 6000ms ease-in;
-  }
-.content-menu{
+/* animation des menu qui apparaisse progressivement */
+.entree {
+    animation : delay 1s;
+    animation-fill-mode: both;
+}
+
+.plats {
+    animation: delay 2s;
+    animation-fill-mode: both;
+}
+
+.desserts {
+    animation: delay 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes delay {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+.content-menu {
     line-height: 2px;
-    margin-left:4px;
+    margin-left: 4px;
 }
 
-h4{
-font-size: 20px;
-font-weight: bold;
+h4 {
+    font-size: 20px;
+    font-weight: bold;
 }
-.content-menu p{
+
+.content-menu p {
     color: #404040;
-    
+
 }
-.entree, .plats, .desserts{
+
+.entree,
+.plats,
+.desserts {
     margin-bottom: 30px;
 }
-.commander{
+
+.commander {
     margin-top: 70px;
-    margin-bottom : 70px;
-    text-align : center;
+    margin-bottom: 70px;
+    text-align: center;
 }
-.div-coeur{
+
+.div-coeur {
     position: relative;
 }
-.coeur{
+
+.coeur {
     font-size: 30px;
     margin-right: 20px;
     z-index: 1;
-    }
-    .coeur-solid{
+}
+
+.coeur-solid {
     font-size: 30px;
     margin-right: 20px;
     background: linear-gradient(180deg, #9356dc 0%, #ff79da 100%);
-    -webkit-background-clip: text ;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     z-index: 11;
     position: absolute;
     top: 0;
     left: 0;
-    } 
-    .coeur-solid:fl{
+}
+
+.coeur-solid:hover {
     opacity: 1;
     transition: 0.5s;
-    }
-    .coeur:fl{
+}
+
+.coeur:hover {
     opacity: 0;
+}
+
+/* Animations coche menu */
+
+
+/* MEDIA QUERIES page internes */
+@media screen and (min-width: 800px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    /* Animations coche menu */
-
-
-    /* MEDIA QUERIES page internes */
-    @media screen and (min-width: 800px) {
-        .menu{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .entree{
-            flex-basis: 30%;
-        }
-        .plats{
-            flex-basis: 30%;
-        }
-        .desserts{
-            flex-basis: 30%;
-        }
-        .commander{
-            flex-basis: 100%;
-        }
+    .entree {
+        flex-basis: 32%;
     }
+
+    .plats {
+        flex-basis: 32%;
+    }
+
+    .desserts {
+        flex-basis: 32%;
+    }
+
+    .commander {
+        flex-basis: 100%;
+    }
+}
