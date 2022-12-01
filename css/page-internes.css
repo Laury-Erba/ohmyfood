@@ -105,8 +105,14 @@ h2 {
 
 .vignette-menu:hover .coche {
     right: 0;
+    transition: all 1s;
     
 }
+
+.coche:hover i{
+    animation: check-rotate 1.5s;
+}
+
 .vignette-menu:hover .prix {
    margin-right: 50px;
     

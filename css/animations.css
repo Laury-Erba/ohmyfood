@@ -96,3 +96,16 @@
         opacity: 1;
     }
 }
+
+/* animation check rotate */
+
+@keyframes check-rotate {
+
+    0%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
+}
