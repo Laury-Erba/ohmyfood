@@ -70,3 +70,29 @@
         transform: scale(0);
     }
 }
+
+/* pages internes */
+/* animation des menu qui apparaisse progressivement */
+.entree {
+    animation: delay 1s both;
+}
+
+.plats {
+    animation: delay 3s both;
+}
+
+.desserts {
+    animation: delay 5s both;
+}
+
+@keyframes delay {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
