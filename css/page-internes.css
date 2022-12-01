@@ -94,23 +94,22 @@ h2 {
     padding: 0 10px;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .coche i {
     font-size: 30px;
     color: white;
-    transform: rotate(180deg);
-    animation: rotate 0.5s both;
 }
 
 .vignette-menu:hover .coche {
     right: 0;
     transition: all 1s;
-    
 }
 
 .coche:hover i{
-    animation: check-rotate 1.5s;
+    animation: check-rotate 0.5s;
 }
 
 .vignette-menu:hover .prix {
