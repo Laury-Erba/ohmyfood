@@ -1,78 +1,5 @@
 /* -------------------Page ACCUEIL ---------------*/
 
-/*spinner*/
-
-.container-spinner {
-    height: 100%;
-    background: white;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    opacity: 0.9;
-    animation: chargement 300ms 2s forwards;
-    transform-origin: top;
-}
-
-.spinner {
-    border: 10px solid #f3f3f3;
-    border-top: 10px solid #73cbb5;
-    border-bottom: 10px solid #9356dc;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 11;
-    animation: spin 7s linear;
-}
-
-/*animation spinner*/
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        visibility: visible;
-        opacity: 0.9;
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        visibility: visible;
-        opacity: 0.9;
-    }
-
-    100% {
-        transform: rotate(360deg);
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-/*animation chargement du spinner*/
-@keyframes chargement {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(0);
-    }
-}
 
 /*localisation */
 .localisation {
@@ -109,6 +36,11 @@
     margin-bottom: 35px;
 }
 
+.btn-violet:hover{
+    opacity: 0.8;
+    box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 30%);
+}
+
 /*fonctionnement */
 .btn-fonctionnement {
     display: flex;
@@ -123,7 +55,6 @@
 .btn-fonctionnement:hover {
     background-color: #f5edff;
 }
-
 .btn-fonctionnement:hover i {
     color: #9356dc;
 }
