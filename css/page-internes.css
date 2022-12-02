@@ -90,7 +90,7 @@ h2 {
     position: absolute;
     background: #99e2d0;
     border-radius: 0 15px 15px 0;
-    right: -40px;
+    right: -50px;
     padding: 0 10px;
     height: 100%;
     overflow: hidden;
@@ -108,7 +108,7 @@ h2 {
     transition: all 1s;
 }
 
-.coche:hover i{
+.vignette-menu:hover i{
     animation: check-rotate 0.5s;
 }
 
@@ -185,7 +185,7 @@ h4 {
     opacity: 0;
 }
 
-/* Animations coche menu */
+
 
 
 /* MEDIA QUERIES page internes */
